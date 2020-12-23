@@ -24,16 +24,18 @@ nav a{
 article{
     width: 80%;
     margin: auto;
-    margin-bottom: 50px;
     
 }
-/* Articles avec boite */
+
+/* Boite page actualités */
 article.boite-actus
 {
     box-shadow: 0 1px 2px 0 rgba(117, 117, 117, 0.5);
     text-decoration: none;
     background-color: #ffffff;
 }
+
+/* Boite page article */
 article.boite-articles
 {
     background-color:#ffffff;
@@ -42,12 +44,13 @@ article.boite-articles
 article a{
     text-decoration: none;
 }
+
 .active{
     background-color:#05739D;
     color:white;
 }
 
-/* Gros titre de page */
+/* Titre principal de page actus */
 h1{
     width: 261px;
     margin: 49px auto;
@@ -56,15 +59,23 @@ h1{
     font-weight: 300;
     line-height: 1.08;
     color: #000609;
-    
 }
 
+/* En-tête des articles */
 header{
     position:relative;
 }
-img{
+
+/* Images en-tête page actus */
+header .images-actus{
     width:100%;
     
+}
+
+/* Image en-tête page article */
+header .image-article{
+    width: 100%;
+    margin-top: 42px;
 }
 
 /* Etiquettes pour les trois images */
@@ -97,9 +108,12 @@ img{
 .etiquette.cas-client{
     background-color: #2ab2ce;
 }
+/* Partie inférieur des articles */
 .content{
     padding:9px 13px 20px 13px;
 }
+
+/* Titre principal de page article */
 .content h1{
     width: auto;
     margin-bottom: 10px;
@@ -113,6 +127,8 @@ img{
     letter-spacing: normal;
     color: #353535;
 }
+
+/* Etiquette page article */
 .content .etiquette.cas-client{
     display: inline-block;
     position: relative;
@@ -128,6 +144,20 @@ img{
     color: white;
     text-align: center;
 }
+
+/* Titre image */
+.content #titre-image{
+    margin-bottom: 29px;
+    font-family: 'Jost';
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 2.2;
+    text-align:center;
+    color: #070707;
+}
+
+/* Bloc date et auteur*/ 
 .date, .auteur{
     display: inline-block;
     width:50%;
@@ -137,7 +167,8 @@ img{
     font-style: italic;
     color: #c7c7c7;
 }
-    
+
+/* Titres des articles*/ 
 h2{
     width: 100%;
     margin-top: 9px;
@@ -151,7 +182,6 @@ h2{
 }
 
 p{
-    
     font-family: 'Jost';
     font-size: 13px;
     font-weight: 300;
@@ -159,30 +189,82 @@ p{
     letter-spacing: normal;
     color: #6e6e6e;
 }
+
 p img{
-    width:100%;
+    margin-top: 36px;
+    width: 100%;
 }
-.bas-article{
-    width: 88px;
-  height: 22px;
-  margin: 0 26px 5px;
-  font-family: Jost;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: italic;
-  line-height: 1.57;
-  letter-spacing: normal;
-  color: #000609;
+
+section{
+    margin: 68px auto 68px auto;
+    text-align: center;
 }
+
+section p {
+    width: auto;
+    height: 22px;
+    margin-bottom: 8px;
+    font-family: 'Jost';
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: #000609;
+}
+
+.cta{
+    display: inline-block;
+    width: 119px;
+    height: 38px;
+    padding: 3px 10px 3px 11px;
+    background-color: #05739d;
+    font-family: 'Bebas Neue';
+    font-size: 21px;
+    line-height: 35.5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
 footer{
-    background-color:black;
+    width: auto;
+    height: 445px;
+    background-color: #232323;
+    text-align: center;
 }
-footer.p{
-    width: 320px;
-  height: 447px;
-  margin: 47px 0 0;
-  padding: 44px 31px 7px 30px;
-  border: solid 1px #979797;
-  background-color: #232323;
+
+footer img{
+    display: inline-block;
+    width: 114px;
+    height: 57px;
+    margin: 44px auto 9px auto;
+    object-fit: contain;
+  
+}
+
+footer p{
+    margin-top: 9px;
+    font-weight: 300;
+    font-family: 'Jost';
+    font-style: italic;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color:#ffffff;
+} 
+
+footer #mot-guillemets{
+    height: 20px;
+    margin: 17px 41px 114px 38px;
+    font-family: 'Bebas Neue';
+    font-size: 39px;
+    font-style:normal;
+    line-height: 0.51;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+footer div{
+    margin-top:55px;
 }
