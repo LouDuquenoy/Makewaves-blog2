@@ -23,9 +23,13 @@ nav a{
 /* Articles de page */
 article{
     width: 80%;
-    margin: auto;
+    margin-right: auto;
+    
+    margin-left: auto;
+    
     
 }
+
 
 /* Boite page actualités */
 article.boite-actus
@@ -147,6 +151,7 @@ header .image-article{
 
 /* Titre image */
 .content #titre-image{
+    margin-top: -20px;
     margin-bottom: 29px;
     font-family: 'Jost';
     font-size: 10px;
@@ -243,13 +248,13 @@ footer img{
 }
 
 footer p{
-    margin-top: 9px;
+    margin-top: 0px;
     font-weight: 300;
     font-family: 'Jost';
     font-style: italic;
     line-height: 1.54;
     letter-spacing: normal;
-    color:#ffffff;
+    color: #ffffff;
 } 
 
 footer #mot-guillemets{
@@ -267,4 +272,16 @@ footer #mot-guillemets{
 
 footer div{
     margin-top:55px;
+}
+#photo-lou{
+    width: 91px;
+  height: 91px;
+}
+.informations{
+    display: inline-block;
+    position: relative;
+}
+.nom, .entreprise
+{
+    font-weight: 600;
 }
