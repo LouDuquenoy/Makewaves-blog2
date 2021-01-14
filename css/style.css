@@ -1,12 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@300;500;600&display=swap'); 
 
-body{
+
+/* SOMMAIRE
+A - ELEMENTS GENERIQUES */
+ /*  1 - BODY */
+  body{
     background-color: #fafafa;
     margin:0;
 }
+ /*   - TITRES */
+    h1{
+    width: 261px;
+    margin: 49px auto;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 37px;
+    font-weight: 300;
+    line-height: 1.08;
+    color: #000609;
+}
+    h2{
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 0px;
+    font-family: 'Bebas Neue';
+    font-weight: 300;
+    font-size: 31px;
+    line-height: 0.81;
+    letter-spacing: normal;
+    color: #000609;
+}
+   
+  /* 3 - TEXTES (p...) */
+    p{
+    font-family: 'Jost';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.46;
+    letter-spacing: normal;
+    color: #535353;
+}
+/*   4 - LIENS ET BOUTONS (a, .cta) */
+   
+    a{
+    text-decoration: none;
+}
+    .cta {
+    display: inline-block;
+    width: 119px;
+    height: 38px;
+    padding: 3px 10px 3px 11px;
+    background-color: #05739d;
+    font-family: 'Bebas Neue';
+    font-size: 21px;
+    line-height: 35.5px;
+    text-decoration: none;
+    color: #ffffff;
+}
 
-/* Barre de navigation */
-nav a{
+/* B  ELEMENTS DE STRUCTURES GENERAL */
+    
+    article{
+    width: 80%;
+    margin-right: auto;
+    margin-bottom:50px;
+    margin-left: auto;
+    text-decoration:none;
+}
+    .content{
+    padding:9px 13px 20px 13px;
+}
+
+    section{
+    margin: 68px auto 68px auto;
+    text-align: center;
+}
+   
+    .post-article{
+    box-shadow: 0 1px 2px 0 rgba(117, 117, 117, 0.5);
+    background-color: #ffffff;
+}
+   footer{
+    width: auto;
+    height: 445px;
+    background-color: #232323;
+    text-align: center;
+}
+
+
+ 
+    
+
+/*C  MODULES SEMI-GENERIQUES */
+    
+.menu a{
     display:inline-block;
     height:25px;
     width: 33.3333333%;
@@ -19,71 +105,18 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
 }
-
-/* Articles de page */
-article{
-    width: 80%;
-    margin-right: auto;
-    
-    margin-left: auto;
-    
-    
-}
-
-
-/* Boite page actualités */
-article.boite-actus
-{
-    box-shadow: 0 1px 2px 0 rgba(117, 117, 117, 0.5);
-    text-decoration: none;
-    background-color: #ffffff;
-}
-
-/* Boite page article */
-article.boite-articles
-{
-    background-color:#ffffff;
-}
-
-article a{
-    text-decoration: none;
-}
-
-.active{
+    .active{
     background-color:#05739D;
     color:white;
+    }
+    nav{
+    margin-bottom: 42px;
 }
-
-/* Titre principal de page actus */
-h1{
-    width: 261px;
-    margin: 49px auto;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 37px;
-    font-weight: 300;
-    line-height: 1.08;
-    color: #000609;
-}
-
-/* En-tête des articles */
-header{
-    position:relative;
-}
-
-/* Images en-tête page actus */
-header .images-actus{
-    width:100%;
-    
-}
-
-/* Image en-tête page article */
-header .image-article{
+    img{
+    display:block;
     width: 100%;
-    margin-top: 42px;
-}
-
-/* Etiquettes pour les trois images */
-.etiquette {
+    }
+    .etiquette {
     display: inline-block;
     position: absolute;
     left: 0;
@@ -98,27 +131,108 @@ header .image-article{
     text-align: center;
 }
 
-/* Etiquette rouge  */
-.etiquette.devfront{
+    .date, .auteur{
+    display: inline-block;
+    width:50%;
+    font-family: 'Jost';
+    font-size: 10px;
+    font-style: italic;
+    color: #c7c7c7;
+}
+    .page-footer .logo{
+    display: inline-block;
+    height: 57px;
+    margin: 44px auto 9px auto;
+    object-fit: contain;
+  
+}
+    .page-footer span{
+    width: 187px;
+    height: 20px;
+    margin-top: 55px;
+    font-family: 'Jost';
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+article .photo-lou{
+    display: block;
+    position: absolute;
+    width: 91px;
+    height: 91px;
+}
+
+
+.accroche span{
+    display:inline-block;
+}
+
+.accroche .fin-accroche{
+    height: 20px;
+    margin: 17px 41px 114px 38px;
+    font-family: 'Bebas Neue';
+    font-size: 39px;
+    font-style:normal;
+    line-height: 0.51;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+
+}
+.reseaux-sociaux{
+    display:inline-block;
+    background-color:grey;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+  /*  Elements spécifiques */
+    
+    .post-article p{
+    width: 235px;
+    margin: 9px 0 0;
+    font-family: 'Jost';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.46;
+    color: #6e6e6e;
+}
+    .post-article header{
+    position:relative;
+}
+    h2.sous-titres-actus{
+    font-size:24px;
+    line-height: 1.04;
+}
+    
+    /* 1 Etiquettes de la page actualité
+ 
+    /*  Etiquette rouge */
+    .etiquette.devfront{
     background-color: #e95763;
 }
 
-/* Etiquette orange */
-.etiquette.coop{
+    /*  Etiquette orange  */
+    .etiquette.coop{
     background-color: #e48127;
 }
 
-/* Etiquette bleue */
-.etiquette.cas-client{
+     /* Etiquette bleue  */
+    .etiquette.cas-client{
     background-color: #2ab2ce;
-}
-/* Partie inférieur des articles */
-.content{
-    padding:9px 13px 20px 13px;
+
 }
 
-/* Titre principal de page article */
-.content h1{
+     /* - 2 Titre principal de la page article */
+    .content h1{
     width: auto;
     margin-bottom: 10px;
     margin-top: 25px;
@@ -132,8 +246,24 @@ header .image-article{
     color: #353535;
 }
 
-/* Etiquette page article */
-.content .etiquette.cas-client{
+    .content img{
+    margin-top: 36px;
+    width: 100%;
+}
+    .content .legende{
+    margin-top: -20px;
+    margin-bottom: 29px;
+    font-family: 'Jost';
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 2.2;
+    text-align:center;
+    color: #070707;
+}
+
+
+    .content .etiquette.cas-client{
     display: inline-block;
     position: relative;
     top: 13px;
@@ -148,9 +278,16 @@ header .image-article{
     color: white;
     text-align: center;
 }
-
-/* Titre image */
-.content #titre-image{
+    .content .intro{
+    width: 235px;
+    height: 104px;
+    font-family: 'Jost';
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.27;
+    color: #6e6e6e;
+}
+    .content .legende{
     margin-top: -20px;
     margin-bottom: 29px;
     font-family: 'Jost';
@@ -161,127 +298,68 @@ header .image-article{
     text-align:center;
     color: #070707;
 }
-
-/* Bloc date et auteur*/ 
-.date, .auteur{
-    display: inline-block;
-    width:50%;
-    
-    font-family: 'Jost';
-    font-size: 10px;
-    font-style: italic;
-    color: #c7c7c7;
-}
-
-/* Titres des articles*/ 
-h2{
-    width: 100%;
-    margin-top: 9px;
-    margin-bottom: 0px;
-    font-family: 'Bebas Neue';
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1.04;
-    letter-spacing: normal;
-    color: #000609;
-}
-
-p{
-    font-family: 'Jost';
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 1.46;
-    letter-spacing: normal;
-    color: #6e6e6e;
-}
-
-p img{
-    margin-top: 36px;
-    width: 100%;
-}
-
-section{
-    margin: 68px auto 68px auto;
-    text-align: center;
-}
-
-section p {
+    .page-section p{
     width: auto;
     height: 22px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     font-family: 'Jost';
-    font-size: 14px;
     font-weight: 600;
     font-style: italic;
     line-height: 1.57;
+    color: #000609;
+
+}
+    /* Image page contact */
+    article .photo-lou{
+    display: block;
+    position: absolute;
+    width: 91px;
+    height: 91px;
+}
+
+    .telephone-lou{
+    width: 239px;
+    margin: 71px auto 138px;
+    font-family: 'Jost';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0.94;
+    letter-spacing: normal;
+    text-align: center;
+    color: #05739d;
+}
+    .identite{
+    display: inline-block;
+    width: 183px;
+    margin-left: 112px;
+    font-family: 'Jost';
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
     letter-spacing: normal;
     color: #000609;
 }
+    
 
-.cta{
-    display: inline-block;
-    width: 119px;
-    height: 38px;
-    padding: 3px 10px 3px 11px;
-    background-color: #05739d;
-    font-family: 'Bebas Neue';
-    font-size: 21px;
-    line-height: 35.5px;
-    text-decoration: none;
-    color: #ffffff;
-}
 
-footer{
-    width: auto;
-    height: 445px;
-    background-color: #232323;
-    text-align: center;
-}
 
-footer img{
-    display: inline-block;
-    width: 114px;
-    height: 57px;
-    margin: 44px auto 9px auto;
-    object-fit: contain;
-  
-}
 
-footer p{
-    margin-top: 0px;
-    font-weight: 300;
-    font-family: 'Jost';
-    font-style: italic;
-    line-height: 1.54;
-    letter-spacing: normal;
-    color: #ffffff;
-} 
-
-footer #mot-guillemets{
-    height: 20px;
-    margin: 17px 41px 114px 38px;
-    font-family: 'Bebas Neue';
-    font-size: 39px;
-    font-style:normal;
-    line-height: 0.51;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-
-}
-
-footer div{
-    margin-top:55px;
-}
-#photo-lou{
-    width: 91px;
-  height: 91px;
-}
-.informations{
-    display: inline-block;
-    position: relative;
-}
-.nom, .entreprise
+/* article.boite-articles
 {
-    font-weight: 600;
-}
+    background-color:#ffffff;
+} */ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
